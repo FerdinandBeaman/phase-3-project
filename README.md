@@ -27,7 +27,7 @@ Two logistic regressions were also performed, but they both oddly became stuck m
 
 Importantly, any questions that seemed to too obviously relate to a theist belief (e.g. "Do you believe in Hell?") or anything that would reasonably/obviously be swayed by someone's demographics were omitted. 
 
-Early on in my journey, I had a cell take over a half an hour to process. I realized that I was wholly unaware about how many estimators I needed, which was likely ballooning the runtime. Code that could be turned into graphs such as this one below likely saved me quite a while.
+Early on in this process, one cell took over a half an hour to process. It was determined that one of the culprits behind this long runtime was the arbitrarily chosen hyperparameter which controlled the number of decision trees that were generated. Graphs such as this one below likely saved a lot of time, cutting the number of trees from 200 to 20.
 ![img](./PreserveProcessingTime.png)
 
 ## Results
