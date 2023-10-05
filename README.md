@@ -42,7 +42,7 @@ This is the confusion matrix for the best GradientBoostedClassifier that I had, 
 
 And below is the confusion matrix for what ended up being my final model. It has over 50% precision for the minority class and nearly 50% recall, despite an overall low accuracy score.
 
-![img](./FinalConfusionMatrix.png)
+![img](./RandomForestFinalConfusionMatrix.png)
 
 
 ## Conclusions
