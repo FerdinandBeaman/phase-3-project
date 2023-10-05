@@ -44,7 +44,6 @@ And below is the confusion matrix for what ended up being my final model. It has
 
 ![img](./RandomForestFinalConfusionMatrix.png)
 
-
 ## Conclusions
 
 It was very difficult to cleanly separate atheists from the pack. Many theists were easily catagorized, leading to a very high precision score for them in many models, but there appears to be a muddled, almost featureless mass of people that refuse to be stereotyped. This goes for both the religious and areligious alike. There's something nice to say about that.
