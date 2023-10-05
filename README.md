@@ -30,7 +30,7 @@ Importantly, any questions that seemed to too obviously relate to a theist belie
 Early on in this process, one cell took over a half an hour to process. It was determined that one of the culprits behind this long runtime was the arbitrarily chosen hyperparameter which controlled the number of decision trees that were generated. Graphs such as this one below likely saved a lot of time. This one in particular showed that the proper number of decision trees seems to reach an asymptote around 20, literally a tenth of what was initially chosen for the aforementioned cell.
 ![img](./PreserveProcessingTime.png)
 
-## Results
+## Evaluation of Results
 
 None of my models were able to be more than 83% accurate, meaning it was exceptionally difficult to do much better than a "dumb" model guessing "theist" every time and being correct 79% of the time. Recall for atheists was especially troublesome, as even approaching 50% in that regard seemed miraculous. The final model ended up being a RandomForest with an accuracy just barely over 80%, which I chose over the slightly more accurate GradientBoostedClassifier because the recall and f1 scores for the minority class (harmonic mean of recall and precision) were superior.
 
