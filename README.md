@@ -28,7 +28,7 @@ Two logistic regressions were also performed, but they both oddly became stuck m
 Importantly, any questions that seemed to too obviously relate to a theist belief (e.g. "Do you believe in Hell?") or anything that would reasonably/obviously be swayed by someone's demographics were omitted. 
 
 Early on in this process, one cell took over a half an hour to process. It was determined that one of the culprits behind this long runtime was the arbitrarily chosen hyperparameter which controlled the number of decision trees that were generated. Graphs such as this one below likely saved a lot of time. This one in particular showed that the proper number of decision trees seems to reach an asymptote around 20, literally a tenth of what was initially chosen for the aforementioned cell.
-![img](./PreserveProcessingTime.png)
+![img](./Images/PreserveProcessingTime.png)
 
 ## Evaluation of Results
 
@@ -38,17 +38,21 @@ I did not use AUC/ROC as I found the confusion matrices and classification repor
 
 This is the confusion matrix for the best GradientBoostedClassifier that I had, which ended up being my choice for second best. Notice the terrible recall forthe minority class. 
 (1.0 = theists, 2.0 = atheists)
-![img](./GBCConfusionMatrix.png)
+![img](./Images/GBCConfusionMatrix.png)
 
 And below is the confusion matrix for what ended up being my final model. It has over 50% precision for the minority class and nearly 50% recall, despite an overall low accuracy score.
 
-![img](./RandomForestFinalConfusionMatrix.png)
+![img](./Images/RandomForestFinalConfusionMatrix.png)
 
 ## Conclusions
 
-It was very difficult to cleanly separate atheists from the pack. Many theists were easily catagorized, leading to a very high precision score for them in many models, but there appears to be a muddled, almost featureless mass of people that refuse to be stereotyped. This goes for both the religious and areligious alike. There's something nice to say about that.
+It was very difficult to cleanly separate atheists from the pack. Many theists were easily categorized, leading to a very high precision score for them in many models, but there appears to be a muddled, almost featureless mass of people that refuse to be stereotyped. This goes for both the religious and areligious alike. There's something nice to say about that.
 
 In any case, my hypothetical client could use my model to at least *somewhat* efficiently track down believers or nonbelievers, doing with that information whatever they wish.
+
+### Recommendations
+Below are the top ranked questions that were left in the pool. There are some themes common to these, such as those regarding family structure and social heirarchy, which is an area may be worth looking into.
+![img](./Images/CorrelatedColumns.png)
 
 ### Next Steps
 
