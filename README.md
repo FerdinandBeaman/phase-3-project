@@ -5,7 +5,7 @@
 
 I wanted to see if you could predict if someone believes in a god just based on their other, seemingly unrelated opinions. 
 All data was drawn from the 2017 World Values Survey (https://www.worldvaluessurvey.org/WVSDocumentationWV7.jsp).
-No distinction was made between different theist beliefs, so the only focus was on the difference between theists and atheists in a general sense.
+No distinction was made between different theistic beliefs, so the only focus was on the difference between theists and atheists in a general sense.
 
 The expectation is that the machine learning algorithms are specialized and powerful enough to perform a classification task such as this one. If properly calibrated, the methods used are likely able to pick up on underlying patterns within the answers to these questions and adequately sort the respondants into their proper categories.
 
